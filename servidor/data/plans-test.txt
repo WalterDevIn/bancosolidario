@@ -1,0 +1,36 @@
+{
+  "planNumero": 71,
+  "gestion": "DAVID VILCA",
+  "nombre": "SIXTO CALIZAYA",
+  "dni": "93956072",
+  "fechaDesembolso": "2025-07-12",
+  "monto": 3000000,
+  "tasaMensual": 0.08,
+  "gastoAdmin": 0.005,
+  "cuotas": 24,
+  "formaPago": "Efectivo"
+}
+
+{
+  "planNumero": 72,
+  "gestion": "PRUEBA",
+  "nombre": "Juan Perez",
+  "dni": "12345678",
+  "fechaDesembolso": "2026-01-15",
+  "monto": 120000,
+  "tasaMensual": 0.05,
+  "cuotas": 6,
+  "formaPago": "Efectivo"
+}
+
+{
+  "planNumero": 73,
+  "gestion": "GRUPO NORTE",
+  "nombre": "Maria Gomez",
+  "dni": "28455677",
+  "fechaDesembolso": "2026-02-10",
+  "monto": 800000,
+  "tasaMensual": 0.12,
+  "cuotas": 12,
+  "formaPago": "Transferencia"
+}
