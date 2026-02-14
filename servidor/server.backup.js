@@ -460,25 +460,10 @@ app.get("/plans/:id", async (req, res) => {
 });
 
 // Listar
-// Listar + Buscar
 app.get("/plans", async (req, res) => {
   const db = await readDb();
-  let plans = Object.values(db.plans);
-
-  const search = req.query.search?.toString().toLowerCase();
-
-  if (search) {
-    plans = plans.filter(plan =>
-      plan.nombre?.toLowerCase().includes(search) ||
-      plan.dni?.toLowerCase().includes(search) ||
-      plan.gestion?.toLowerCase().includes(search) ||
-      String(plan.planNumero ?? "").toLowerCase().includes(search)
-    );
-  }
-
-  res.json(plans);
+  res.json(Object.values(db.plans));
 });
-
 
 // Editar (recalcula schedule si cambias datos base)
 app.put("/plans/:id", async (req, res) => {
@@ -519,25 +504,6 @@ app.put("/plans/:id", async (req, res) => {
     await writeDb(db);
 
     res.json(updated);
-  } catch (e) {
-    res.status(400).json({ error: e.message ?? "Error" });
-  }
-});
-
-// Eliminar
-app.delete("/plans/:id", async (req, res) => {
-  try {
-    const db = await readDb();
-    const plan = db.plans[req.params.id];
-
-    if (!plan) {
-      return res.status(404).json({ error: "No existe" });
-    }
-
-    delete db.plans[req.params.id];
-    await writeDb(db);
-
-    res.json({ success: true });
   } catch (e) {
     res.status(400).json({ error: e.message ?? "Error" });
   }

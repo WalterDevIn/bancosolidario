@@ -1,240 +1,443 @@
 {
   "plans": {
-    "KdiMWriUYW": {
-      "id": "KdiMWriUYW",
-      "planNumero": 71,
-      "gestion": "DAVID VILCA",
-      "nombre": "SIXTO CALIZAYA",
-      "dni": "93956072",
-      "fechaDesembolso": "2025-07-12",
-      "monto": 3000000,
-      "tasaMensual": 0.08,
+    "5MtkjJsAvk": {
+      "id": "5MtkjJsAvk",
+      "planNumero": 72,
+      "gestion": "PRUEBA",
+      "nombre": "Juan Perez",
+      "dni": "12345678",
+      "fechaDesembolso": "2026-01-15",
+      "monto": 120000,
+      "tasaMensual": 0.05,
       "gastoAdmin": 0.005,
-      "cuotas": 24,
+      "cuotas": 6,
       "formaPago": "Efectivo",
-      "primeraCuotaFecha": "2025-08-09",
+      "primeraCuotaFecha": "2026-01-15",
       "schedule": {
         "rows": [
           {
             "cuota": 1,
-            "fechaISO": "2025-08-09",
-            "fecha": "09-08-25",
-            "saldo": 3000000,
-            "capital": 125000,
-            "interes": 240000,
-            "total": 365000
+            "fechaISO": "2026-01-15",
+            "fecha": "15-01-26",
+            "saldo": 120000,
+            "capital": 20000,
+            "interes": 6000,
+            "total": 26000
           },
           {
             "cuota": 2,
-            "fechaISO": "2025-09-09",
-            "fecha": "09-09-25",
-            "saldo": 2875000,
-            "capital": 125000,
-            "interes": 230000,
-            "total": 355000
+            "fechaISO": "2026-02-15",
+            "fecha": "15-02-26",
+            "saldo": 100000,
+            "capital": 20000,
+            "interes": 5000,
+            "total": 25000
           },
           {
             "cuota": 3,
-            "fechaISO": "2025-10-09",
-            "fecha": "09-10-25",
-            "saldo": 2750000,
-            "capital": 125000,
-            "interes": 220000,
-            "total": 345000
+            "fechaISO": "2026-03-15",
+            "fecha": "15-03-26",
+            "saldo": 80000,
+            "capital": 20000,
+            "interes": 4000,
+            "total": 24000
           },
           {
             "cuota": 4,
-            "fechaISO": "2025-11-09",
-            "fecha": "09-11-25",
-            "saldo": 2625000,
-            "capital": 125000,
-            "interes": 210000,
-            "total": 335000
+            "fechaISO": "2026-04-15",
+            "fecha": "15-04-26",
+            "saldo": 60000,
+            "capital": 20000,
+            "interes": 3000,
+            "total": 23000
           },
           {
             "cuota": 5,
-            "fechaISO": "2025-12-09",
-            "fecha": "09-12-25",
-            "saldo": 2500000,
-            "capital": 125000,
-            "interes": 200000,
-            "total": 325000
+            "fechaISO": "2026-05-15",
+            "fecha": "15-05-26",
+            "saldo": 40000,
+            "capital": 20000,
+            "interes": 2000,
+            "total": 22000
           },
           {
             "cuota": 6,
-            "fechaISO": "2026-01-09",
-            "fecha": "09-01-26",
-            "saldo": 2375000,
-            "capital": 125000,
-            "interes": 190000,
-            "total": 315000
+            "fechaISO": "2026-06-15",
+            "fecha": "15-06-26",
+            "saldo": 20000,
+            "capital": 20000,
+            "interes": 1000,
+            "total": 21000
+          }
+        ],
+        "sumCapital": 120000,
+        "sumInteres": 21000,
+        "sumTotal": 141000
+      }
+    },
+    "Gi5V8v7UIj": {
+      "id": "Gi5V8v7UIj",
+      "planNumero": 73,
+      "gestion": "GRUPO NORTE",
+      "nombre": "Maria Gomez",
+      "dni": "28455677",
+      "fechaDesembolso": "2026-02-10",
+      "monto": 800000,
+      "tasaMensual": 0.12,
+      "gastoAdmin": 0.005,
+      "cuotas": 12,
+      "formaPago": "Transferencia",
+      "primeraCuotaFecha": "2026-02-10",
+      "schedule": {
+        "rows": [
+          {
+            "cuota": 1,
+            "fechaISO": "2026-02-10",
+            "fecha": "10-02-26",
+            "saldo": 800000,
+            "capital": 66666,
+            "interes": 96000,
+            "total": 162666
+          },
+          {
+            "cuota": 2,
+            "fechaISO": "2026-03-10",
+            "fecha": "10-03-26",
+            "saldo": 733334,
+            "capital": 66666,
+            "interes": 88000,
+            "total": 154666
+          },
+          {
+            "cuota": 3,
+            "fechaISO": "2026-04-10",
+            "fecha": "10-04-26",
+            "saldo": 666668,
+            "capital": 66666,
+            "interes": 80000,
+            "total": 146666
+          },
+          {
+            "cuota": 4,
+            "fechaISO": "2026-05-10",
+            "fecha": "10-05-26",
+            "saldo": 600002,
+            "capital": 66666,
+            "interes": 72000,
+            "total": 138666
+          },
+          {
+            "cuota": 5,
+            "fechaISO": "2026-06-10",
+            "fecha": "10-06-26",
+            "saldo": 533336,
+            "capital": 66666,
+            "interes": 64000,
+            "total": 130666
+          },
+          {
+            "cuota": 6,
+            "fechaISO": "2026-07-10",
+            "fecha": "10-07-26",
+            "saldo": 466670,
+            "capital": 66666,
+            "interes": 56000,
+            "total": 122666
           },
           {
             "cuota": 7,
-            "fechaISO": "2026-02-09",
-            "fecha": "09-02-26",
-            "saldo": 2250000,
-            "capital": 125000,
-            "interes": 180000,
-            "total": 305000
+            "fechaISO": "2026-08-10",
+            "fecha": "10-08-26",
+            "saldo": 400004,
+            "capital": 66666,
+            "interes": 48000,
+            "total": 114666
           },
           {
             "cuota": 8,
-            "fechaISO": "2026-03-09",
-            "fecha": "09-03-26",
-            "saldo": 2125000,
-            "capital": 125000,
-            "interes": 170000,
-            "total": 295000
+            "fechaISO": "2026-09-10",
+            "fecha": "10-09-26",
+            "saldo": 333338,
+            "capital": 66666,
+            "interes": 40001,
+            "total": 106667
           },
           {
             "cuota": 9,
-            "fechaISO": "2026-04-09",
-            "fecha": "09-04-26",
-            "saldo": 2000000,
-            "capital": 125000,
-            "interes": 160000,
-            "total": 285000
+            "fechaISO": "2026-10-10",
+            "fecha": "10-10-26",
+            "saldo": 266672,
+            "capital": 66666,
+            "interes": 32001,
+            "total": 98667
           },
           {
             "cuota": 10,
-            "fechaISO": "2026-05-09",
-            "fecha": "09-05-26",
-            "saldo": 1875000,
-            "capital": 125000,
-            "interes": 150000,
-            "total": 275000
+            "fechaISO": "2026-11-10",
+            "fecha": "10-11-26",
+            "saldo": 200006,
+            "capital": 66666,
+            "interes": 24001,
+            "total": 90667
           },
           {
             "cuota": 11,
-            "fechaISO": "2026-06-09",
-            "fecha": "09-06-26",
-            "saldo": 1750000,
-            "capital": 125000,
-            "interes": 140000,
-            "total": 265000
+            "fechaISO": "2026-12-10",
+            "fecha": "10-12-26",
+            "saldo": 133340,
+            "capital": 66666,
+            "interes": 16001,
+            "total": 82667
           },
           {
             "cuota": 12,
-            "fechaISO": "2026-07-09",
-            "fecha": "09-07-26",
-            "saldo": 1625000,
-            "capital": 125000,
-            "interes": 130000,
-            "total": 255000
+            "fechaISO": "2027-01-10",
+            "fecha": "10-01-27",
+            "saldo": 66674,
+            "capital": 66674,
+            "interes": 8001,
+            "total": 74675
+          }
+        ],
+        "sumCapital": 800000,
+        "sumInteres": 624005,
+        "sumTotal": 1424005
+      }
+    },
+    "FcyWyx-IMp": {
+      "id": "FcyWyx-IMp",
+      "planNumero": "74",
+      "gestion": "YO",
+      "nombre": "MARTINEZ WALTER",
+      "dni": "95699748",
+      "fechaDesembolso": "2026-02-14",
+      "monto": 2000000,
+      "tasaMensual": 0.08,
+      "gastoAdmin": 0.005,
+      "cuotas": 24,
+      "formaPago": "Efectivo",
+      "schedule": {
+        "rows": [
+          {
+            "cuota": 1,
+            "fechaISO": "2026-03-14",
+            "fecha": "14-03-26",
+            "saldo": 2000000,
+            "capital": 83333,
+            "interes": 160000,
+            "total": 243333
+          },
+          {
+            "cuota": 2,
+            "fechaISO": "2026-04-11",
+            "fecha": "11-04-26",
+            "saldo": 1916667,
+            "capital": 83333,
+            "interes": 153333,
+            "total": 236666
+          },
+          {
+            "cuota": 3,
+            "fechaISO": "2026-05-09",
+            "fecha": "09-05-26",
+            "saldo": 1833334,
+            "capital": 83333,
+            "interes": 146667,
+            "total": 230000
+          },
+          {
+            "cuota": 4,
+            "fechaISO": "2026-06-13",
+            "fecha": "13-06-26",
+            "saldo": 1750001,
+            "capital": 83333,
+            "interes": 140000,
+            "total": 223333
+          },
+          {
+            "cuota": 5,
+            "fechaISO": "2026-07-11",
+            "fecha": "11-07-26",
+            "saldo": 1666668,
+            "capital": 83333,
+            "interes": 133333,
+            "total": 216666
+          },
+          {
+            "cuota": 6,
+            "fechaISO": "2026-08-08",
+            "fecha": "08-08-26",
+            "saldo": 1583335,
+            "capital": 83333,
+            "interes": 126667,
+            "total": 210000
+          },
+          {
+            "cuota": 7,
+            "fechaISO": "2026-09-12",
+            "fecha": "12-09-26",
+            "saldo": 1500002,
+            "capital": 83333,
+            "interes": 120000,
+            "total": 203333
+          },
+          {
+            "cuota": 8,
+            "fechaISO": "2026-10-10",
+            "fecha": "10-10-26",
+            "saldo": 1416669,
+            "capital": 83333,
+            "interes": 113334,
+            "total": 196667
+          },
+          {
+            "cuota": 9,
+            "fechaISO": "2026-11-14",
+            "fecha": "14-11-26",
+            "saldo": 1333336,
+            "capital": 83333,
+            "interes": 106667,
+            "total": 190000
+          },
+          {
+            "cuota": 10,
+            "fechaISO": "2026-12-12",
+            "fecha": "12-12-26",
+            "saldo": 1250003,
+            "capital": 83333,
+            "interes": 100000,
+            "total": 183333
+          },
+          {
+            "cuota": 11,
+            "fechaISO": "2027-01-09",
+            "fecha": "09-01-27",
+            "saldo": 1166670,
+            "capital": 83333,
+            "interes": 93334,
+            "total": 176667
+          },
+          {
+            "cuota": 12,
+            "fechaISO": "2027-02-13",
+            "fecha": "13-02-27",
+            "saldo": 1083337,
+            "capital": 83333,
+            "interes": 86667,
+            "total": 170000
           },
           {
             "cuota": 13,
-            "fechaISO": "2026-08-09",
-            "fecha": "09-08-26",
-            "saldo": 1500000,
-            "capital": 125000,
-            "interes": 120000,
-            "total": 245000
+            "fechaISO": "2027-03-13",
+            "fecha": "13-03-27",
+            "saldo": 1000004,
+            "capital": 83333,
+            "interes": 80000,
+            "total": 163333
           },
           {
             "cuota": 14,
-            "fechaISO": "2026-09-09",
-            "fecha": "09-09-26",
-            "saldo": 1375000,
-            "capital": 125000,
-            "interes": 110000,
-            "total": 235000
+            "fechaISO": "2027-04-10",
+            "fecha": "10-04-27",
+            "saldo": 916671,
+            "capital": 83333,
+            "interes": 73334,
+            "total": 156667
           },
           {
             "cuota": 15,
-            "fechaISO": "2026-10-09",
-            "fecha": "09-10-26",
-            "saldo": 1250000,
-            "capital": 125000,
-            "interes": 100000,
-            "total": 225000
+            "fechaISO": "2027-05-08",
+            "fecha": "08-05-27",
+            "saldo": 833338,
+            "capital": 83333,
+            "interes": 66667,
+            "total": 150000
           },
           {
             "cuota": 16,
-            "fechaISO": "2026-11-09",
-            "fecha": "09-11-26",
-            "saldo": 1125000,
-            "capital": 125000,
-            "interes": 90000,
-            "total": 215000
+            "fechaISO": "2027-06-12",
+            "fecha": "12-06-27",
+            "saldo": 750005,
+            "capital": 83333,
+            "interes": 60000,
+            "total": 143333
           },
           {
             "cuota": 17,
-            "fechaISO": "2026-12-09",
-            "fecha": "09-12-26",
-            "saldo": 1000000,
-            "capital": 125000,
-            "interes": 80000,
-            "total": 205000
+            "fechaISO": "2027-07-10",
+            "fecha": "10-07-27",
+            "saldo": 666672,
+            "capital": 83333,
+            "interes": 53334,
+            "total": 136667
           },
           {
             "cuota": 18,
-            "fechaISO": "2027-01-09",
-            "fecha": "09-01-27",
-            "saldo": 875000,
-            "capital": 125000,
-            "interes": 70000,
-            "total": 195000
+            "fechaISO": "2027-08-14",
+            "fecha": "14-08-27",
+            "saldo": 583339,
+            "capital": 83333,
+            "interes": 46667,
+            "total": 130000
           },
           {
             "cuota": 19,
-            "fechaISO": "2027-02-09",
-            "fecha": "09-02-27",
-            "saldo": 750000,
-            "capital": 125000,
-            "interes": 60000,
-            "total": 185000
+            "fechaISO": "2027-09-11",
+            "fecha": "11-09-27",
+            "saldo": 500006,
+            "capital": 83333,
+            "interes": 40000,
+            "total": 123333
           },
           {
             "cuota": 20,
-            "fechaISO": "2027-03-09",
-            "fecha": "09-03-27",
-            "saldo": 625000,
-            "capital": 125000,
-            "interes": 50000,
-            "total": 175000
+            "fechaISO": "2027-10-09",
+            "fecha": "09-10-27",
+            "saldo": 416673,
+            "capital": 83333,
+            "interes": 33334,
+            "total": 116667
           },
           {
             "cuota": 21,
-            "fechaISO": "2027-04-09",
-            "fecha": "09-04-27",
-            "saldo": 500000,
-            "capital": 125000,
-            "interes": 40000,
-            "total": 165000
+            "fechaISO": "2027-11-13",
+            "fecha": "13-11-27",
+            "saldo": 333340,
+            "capital": 83333,
+            "interes": 26667,
+            "total": 110000
           },
           {
             "cuota": 22,
-            "fechaISO": "2027-05-09",
-            "fecha": "09-05-27",
-            "saldo": 375000,
-            "capital": 125000,
-            "interes": 30000,
-            "total": 155000
+            "fechaISO": "2027-12-11",
+            "fecha": "11-12-27",
+            "saldo": 250007,
+            "capital": 83333,
+            "interes": 20001,
+            "total": 103334
           },
           {
             "cuota": 23,
-            "fechaISO": "2027-06-09",
-            "fecha": "09-06-27",
-            "saldo": 250000,
-            "capital": 125000,
-            "interes": 20000,
-            "total": 145000
+            "fechaISO": "2028-01-08",
+            "fecha": "08-01-28",
+            "saldo": 166674,
+            "capital": 83333,
+            "interes": 13334,
+            "total": 96667
           },
           {
             "cuota": 24,
-            "fechaISO": "2027-07-09",
-            "fecha": "09-07-27",
-            "saldo": 125000,
-            "capital": 125000,
-            "interes": 10000,
-            "total": 135000
+            "fechaISO": "2028-02-12",
+            "fecha": "12-02-28",
+            "saldo": 83341,
+            "capital": 83341,
+            "interes": 6667,
+            "total": 90008
           }
         ],
-        "sumCapital": 3000000,
-        "sumInteres": 3000000,
-        "sumTotal": 6000000
+        "sumCapital": 2000000,
+        "sumInteres": 2000007,
+        "sumTotal": 4000007
       }
     }
   }
