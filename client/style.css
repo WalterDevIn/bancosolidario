@@ -1,0 +1,466 @@
+:root {
+  --primary: #1e3a8a;
+  --primary-light: #2563eb;
+  --danger: #dc2626;
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --border-soft: #e5e7eb;
+  --radius: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  padding: 40px 20px;
+  margin: 0;
+  color: #111827;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  background: var(--card);
+  padding: 35px;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.admin-block {
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+fieldset.form-group {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-inline {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.field-inline .field {
+  flex: 1;
+}
+
+input {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  font-size: 14px;
+  background: #fafafa;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+  background: white;
+}
+
+.mini-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.mini-buttons button {
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  background: #eef2ff;
+  color: var(--primary);
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.mini-buttons button:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.primary-btn {
+  padding: 15px;
+  border-radius: 14px;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(30,58,138,0.3);
+}
+
+/* PLAN CARDS */
+.plan-card {
+  padding: 20px;
+  border-radius: 14px;
+  background: #fafafa;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-soft);
+}
+
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-actions button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.view-btn { background: var(--primary); color: white; }
+.download-btn { background: #10b981; color: white; }
+.delete-btn { background: var(--danger); color: white; }
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden { display: none; }
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ========== LIST HEADER ========== */
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.summary-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.summary-stats div {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.summary-stats strong {
+  font-size: 18px;
+  color: #111827;
+}
+
+/* ========== LOAN LIST ========== */
+
+.loan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.loan-card {
+  background: white;
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 22px;
+  transition: all 0.25s ease;
+}
+
+.loan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.07);
+}
+
+/* Layout interno */
+
+.loan-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loan-client {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.loan-client strong {
+  font-size: 17px;
+}
+
+.loan-meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Resumen financiero */
+
+.loan-financial {
+  display: flex;
+  gap: 40px;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.loan-financial div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.loan-financial span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.loan-financial strong {
+  font-size: 15px;
+}
+
+/* Badges */
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.badge-blue {
+  background: #e0e7ff;
+  color: #1e3a8a;
+}
+
+.badge-green {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+/* Botones */
+
+.loan-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.loan-actions button {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-view {
+  background: #1e3a8a;
+  color: white;
+}
+
+.btn-excel {
+  background: #059669;
+  color: white;
+}
+
+.btn-delete {
+  background: #dc2626;
+  color: white;
+}
+
+.loan-actions button:hover {
+  opacity: 0.85;
+}
+
+.input-with-buttons input {
+  padding-right: 140px;
+}
+
+.quick-buttons button {
+  min-width: 50px;
+}
+
+.gestion-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.gestion-side,
+.plan-side {
+  flex: 1;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.plan-side .field-inline {
+  width: 100%;
+}
+
+.plan-side .field-inline .field {
+  flex: 1;
+}
+
+/* ====== APP FULLSCREEN LAYOUT ====== *//* ====== APP FULLSCREEN LAYOUT MEJORADO ====== */
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Layout principal */
+.app-layout {
+  flex: 1;
+  display: flex;
+  gap: 18px; /* menos espacio entre columnas */
+  min-height: 0; /* importante para overflow interno */
+}
+
+/* FORMULARIO */
+.form-card {
+  flex: 1.3; /* más ancho que la lista */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  margin: 0;
+}
+
+/* LISTA */
+.list-card {
+  flex: 1; /* un poco más angosta */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Lista con scroll interno */
+.loan-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* Header listado */
+.list-header {
+  margin-bottom: 18px;
+}
+
+/* Barra búsqueda */
+.search-bar {
+  position: relative;
+  width: 100%;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 40px 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  background: #fff;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+
+/* Lista */
+.plans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow-y: auto;
+  max-height: 100%;
+}
+

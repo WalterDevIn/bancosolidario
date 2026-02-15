@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestión de Planes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Gestión de Planes</h1>
+  <div class="app-layout">
+
+    <section class="card form-card">
+      <h2>Crear Plan</h2>
+
+      <form id="planForm">
+
+        <div class="admin-block">
+          <div class="gestion-row">
+
+            <!-- GESTIÓN -->
+            <div class="gestion-side">
+              <div class="field">
+                <label>Gestión</label>
+                <input type="text" id="gestion" placeholder="Ej: SHERMA TELALEJANA" required />
+              </div>
+            </div>
+
+            <!-- PLAN NUMERO -->
+            <div class="plan-side">
+              <div class="field-inline full-width">
+                <div class="field">
+                  <label>Número de Plan</label>
+                  <input type="text" id="planNumero" placeholder="Ej: 001" required />
+                </div>
+
+                <div class="mini-buttons">
+                  <button type="button" id="suggestBtn" onclick="applySuggestedPlan()">
+                    ...
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <fieldset class="form-group">
+          <legend>Datos del Cliente</legend>
+          <div class="row">
+            <input type="text" id="nombre" placeholder="Nombre" required />
+            <input type="text" id="dni" placeholder="DNI" required />
+          </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend>Datos Financieros</legend>
+
+          <div class="field">
+          <label>Monto</label>
+          <div class="field-inline">
+          <div class="field">
+            <input type="text" id="monto" placeholder="Ej: 2M o 2000000" required />
+          </div>
+          <div class="mini-buttons">
+            <button type="button" onclick="setMonto('2M')">2M</button>
+            <button type="button" onclick="setMonto('3M')">3M</button>
+            <button type="button" onclick="setMonto('4M')">4M</button>
+          </div>
+          </div>
+          </div>
+
+          <div class="field-inline">
+            <div class="field">
+              <label>Interés mensual</label>
+              <input type="text" id="tasaMensual" placeholder="Ej: 8% o 0.08" />
+            </div>
+            <div class="mini-buttons">
+              <button type="button" onclick="setInterest(0.08)">8%</button>
+              <button type="button" onclick="setInterest(0.12)">12%</button>
+            </div>
+          </div>
+
+          <div class="field-inline">
+            <div class="field">
+              <label>Cuotas</label>
+              <input type="number" id="cuotas" placeholder="Cantidad de cuotas" />
+            </div>
+            <div class="mini-buttons">
+              <button type="button" onclick="setCuotas(6)">6</button>
+              <button type="button" onclick="setCuotas(12)">12</button>
+              <button type="button" onclick="setCuotas(24)">24</button>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend>Fecha</legend>
+          <div class="field">
+            <label>Fecha de desembolso</label>
+            <input type="date" id="fechaDesembolso" required />
+          </div>
+        </fieldset>
+
+        <button type="submit" class="primary-btn">Crear Plan</button>
+
+      </form>
+    </section>
+
+    <section class="card list-card">
+      <div class="list-header">
+        <h2>Préstamos Activos</h2>
+        <div class="summary-stats">
+          <div>
+            <span>Total préstamos</span>
+            <strong id="totalCount">0</strong>
+          </div>
+          <div>
+            <span>Monto total</span>
+            <strong id="totalAmount">$0</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-header">
+        <div class="search-bar">
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Buscar por nombre, DNI, gestión o plan..." 
+            oninput="loadPlans()"
+          />
+          <span class="search-icon">🔎</span>
+        </div>
+      </div>
+
+      <div id="plansList" class="loan-list"></div>
+    </section>
+
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle"></h3>
+        <button class="close-btn" onclick="closeModal()">×</button>
+      </div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
