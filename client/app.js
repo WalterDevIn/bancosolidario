@@ -1,4 +1,7 @@
-const API = "https://improved-memory-v6v75wxvpjpxcpj66-3000.app.github.dev";
+function getAPI() {
+  return document.getElementById("apiSelect")?.value
+    || "https://bancosolidario.onrender.com";
+}
 
 let suggestedPlanNumber = null;
 
@@ -43,7 +46,7 @@ function parseMonto(value) {
 }
 
 async function suggestNextPlan() {
-  const res = await fetch(`${API}/plans`);
+  const res = await fetch(`${getAPI()}/plans`);
   const plans = await res.json();
 
   if (!plans.length) {
@@ -60,7 +63,7 @@ async function suggestNextPlan() {
 
 
 async function updateSuggestedPlan() {
-  const res = await fetch(`${API}/plans`);
+  const res = await fetch(`${getAPI()}/plans`);
   const plans = await res.json();
 
   let next = 1;
@@ -107,7 +110,7 @@ document.getElementById("planForm").addEventListener("submit", async (e) => {
   };
 
 
-  const res = await fetch(`${API}/plans`, {
+  const res = await fetch(`${getAPI()}/plans`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
@@ -124,8 +127,8 @@ async function loadPlans() {
   const search = searchInput ? searchInput.value.trim() : "";
 
   const url = search
-    ? `${API}/plans?search=${encodeURIComponent(search)}`
-    : `${API}/plans`;
+    ? `${getAPI()}/plans?search=${encodeURIComponent(search)}`
+    : `${getAPI()}/plans`;
 
   const res = await fetch(url);
   const plans = await res.json();
@@ -205,16 +208,16 @@ async function loadPlans() {
 
 
 function downloadExcel(id) {
-  window.open(`${API}/plans/${id}/excel`);
+  window.open(`${getAPI()}/plans/${id}/excel`);
 }
 
 async function deletePlan(id) {
-  await fetch(`${API}/plans/${id}`, { method: "DELETE" });
+  await fetch(`${getAPI()}/plans/${id}`, { method: "DELETE" });
   loadPlans();
 }
 
 async function viewPlan(id) {
-  const res = await fetch(`${API}/plans/${id}`);
+  const res = await fetch(`${getAPI()}/plans/${id}`);
   const plan = await res.json();
 
   document.getElementById("modalTitle").innerText = `Plan de ${plan.nombre}`;

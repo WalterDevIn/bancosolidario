@@ -464,3 +464,22 @@ h1 {
   max-height: 100%;
 }
 
+
+.api-switch {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.api-switch select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-soft);
+  background: white;
+  font-size: 13px;
+}
